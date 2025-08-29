@@ -1,24 +1,21 @@
 import java.util.Random;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Arrays;
 
-public class App {
+public class Main {
 
-    
+
     public static void main(String[] args) {
         int range_start = 1;
         int range_end = 100;
 
         int sum = 0;
 
-        int[] arr = new int[range_end + 1 - range_start];
+        ArrayList<Integer> AL = new ArrayList();
         for(int i = range_start; i < range_end+1; i++){
-            arr[i - 1] = i;
+            AL.add(i);
         }
-
-        for(int i = 0; i < arr.length; i++){
-            System.out.println(arr[i]);
-        }
-        
-       
-
+        System.out.println(AL);
     }
 }
